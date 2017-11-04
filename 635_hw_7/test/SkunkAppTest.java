@@ -45,4 +45,25 @@ public class SkunkAppTest
 		assertEquals("second die is not 1", 1, d.getDie2Roll());
 
 	}
+	
+	@Test
+	public void boolean_test_new_dice_rolls_boxcars_then_double_skunck()
+	{
+		Dice d = new Dice(new int[]
+		{ 6, 1 }, new int[]
+		{ 6, 1 });
+		d.roll();
+		
+		assertTrue( "first is", 6 == d.getDie1Roll());
+		assertTrue( "first die is not 1", 1 != d.getDie2Roll());	
+
+		d.roll();
+		
+		assertTrue( "first is", 1 == d.getDie1Roll());
+		assertTrue( "first die is not 6", 6 != d.getDie2Roll());	
+
+
+	}
+	
+	
 }
