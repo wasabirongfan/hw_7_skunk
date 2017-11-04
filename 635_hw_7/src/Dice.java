@@ -38,9 +38,24 @@ public class Dice
 		loadedDieIndex++;
 	}
 
+	// public static final int NUM_TRIALS = 360;
+
 	public static void main(String[] args)
 	{
-
+		// Dice dice1 = new Dice();
+		// int snakeEyesCount = 0;
+		//
+		// for (int i = 0; i < NUM_TRIALS; i++)
+		// {
+		// dice1.roll();
+		// System.out.println(dice1);
+		//
+		// if (dice1.getDie2Roll() == 2)
+		// snakeEyesCount++;
+		// }
+		//
+		// System.out.println("Actual count: " + snakeEyesCount);
+		// System.out.println("Expected count: " + (NUM_TRIALS / 36.0));
 	}
 
 }
