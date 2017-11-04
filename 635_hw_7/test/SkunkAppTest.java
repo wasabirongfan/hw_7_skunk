@@ -45,4 +45,16 @@ public class SkunkAppTest
 		assertEquals("second die is not 1", 1, d.getDie2Roll());
 
 	}
+
+	@Test
+	public void test_new_dice_rolls_no_skunck()
+	{
+		Dice d = new Dice(new int[]
+		{ 2, 2 }, new int[]
+		{ 2, 2 });
+		d.roll();
+		assertEquals("firsr die is not skunck", 2, d.getDie1Roll());
+		assertEquals("second die is not skunck", 2, d.getDie2Roll());
+	}
+
 }
